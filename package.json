@@ -1,0 +1,28 @@
+{
+  "name": "task-manager-rest-api",
+  "version": "1.0.0",
+  "description": "Rest API for task manager app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavindun/Task-Manager-REST-API.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "Task",
+    "Manager"
+  ],
+  "author": "Kavindu Jayakodi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kavindun/Task-Manager-REST-API/issues"
+  },
+  "homepage": "https://github.com/kavindun/Task-Manager-REST-API#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
