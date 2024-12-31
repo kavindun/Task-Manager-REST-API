@@ -1,5 +1,5 @@
 const express = require('express')
-require('./dbconnection/mongoose')
+require('./dbconection/mongoose')
 
 
 const app = express()
