@@ -5,7 +5,7 @@ require('./dbconection/mongoose')
 const app = express()
 const port = process.env.PORT || 3000
 
-app.post('/tasks', async (req, res) => {
+app.get('/tasks', (req, res) => {
     res.send("testing");
 })
 
