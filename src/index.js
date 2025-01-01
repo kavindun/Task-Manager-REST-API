@@ -1,6 +1,7 @@
 const express = require('express')
 require('./dbconection/mongoose')
 const taskRouter = require('./routes/task')
+const userRouter = require('./routes/user')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -8,6 +9,7 @@ const port = process.env.PORT || 3000
 
 app.use(express.json())
 app.use(taskRouter)
+app.use(userRouter)
 
 
 
