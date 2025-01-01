@@ -1,13 +1,13 @@
 const express = require('express')
 require('./dbconection/mongoose')
-
+const taskRouter = require('./routes/task')
 
 const app = express()
 const port = process.env.PORT || 3000
 
-app.get('/tasks', (req, res) => {
-    res.send("testing");
-})
+
+app.use(express.json())
+app.use(taskRouter)
 
 
 
