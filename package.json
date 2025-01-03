@@ -26,6 +26,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^3.7.4",
     "mongoose": "^5.13.23",
     "nodemon": "^1.18.9",
