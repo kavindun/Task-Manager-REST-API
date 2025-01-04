@@ -2,7 +2,7 @@ const express = require('express')
 const User = require('../models/user')
 const auth = require('../middleware/auth')
 const router = new express.Router()
-
+//User registration endpoint
 router.post('/users', async (req, res) => {
     console.log(req.body)
     const user = new User(req.body)
@@ -16,6 +16,7 @@ router.post('/users', async (req, res) => {
     }
 })
 
+//user login endpoint
 router.post('/users/login', async (req, res) => {
     try {
         //console.log(HI);
@@ -27,6 +28,8 @@ router.post('/users/login', async (req, res) => {
         res.status(400).send()
     }
 })
+
+//User log out endpoitn
 
 router.post('/users/logout', auth, async (req, res) => {
     try {
@@ -40,6 +43,8 @@ router.post('/users/logout', auth, async (req, res) => {
         res.status(500).send()
     }
 })
+
+//get user profile name
 router.get('/users/me', auth, async (req, res) => {
     res.send(req.user)
 })
